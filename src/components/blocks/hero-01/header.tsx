@@ -60,6 +60,24 @@ const Header = ({ navigationData, className }: HeaderProps) => {
     if (window.innerWidth >= 768) setIsOpen(false);
   }, []);
 
+  const handleSmoothScroll = useCallback(
+    (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+      event.preventDefault();
+      const targetId = href.startsWith("#") ? href.substring(1) : "";
+      if (targetId) {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+          // Close mobile menu if open
+          if (isOpen) {
+            setIsOpen(false);
+          }
+        }
+      }
+    },
+    [isOpen],
+  );
+
   useEffect(() => {
     setMounted(true);
     window.addEventListener("scroll", handleScroll);
@@ -105,6 +123,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
                 <NavigationMenuItem key={navItem.title}>
                   <NavigationMenuLink
                     href={navItem.href}
+                    onClick={(e) => handleSmoothScroll(e, navItem.href)}
                     className={cn(
                       "text-muted-foreground hover:text-foreground hover:bg-background hover:outline-border rounded-full px-2 py-2 text-sm font-medium tracking-normal outline outline-transparent transition hover:shadow-xs lg:px-4",
                       navItem.isActive ? "bg-background text-foreground" : "",
@@ -164,6 +183,9 @@ const Header = ({ navigationData, className }: HeaderProps) => {
                             <NavigationMenuItem key={item.title}>
                               <NavigationMenuLink
                                 href={item.href}
+                                onClick={(e) =>
+                                  handleSmoothScroll(e, item.href)
+                                }
                                 className={cn(
                                   "group/nav flex items-center p-0 text-2xl font-semibold tracking-tight transition-all hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent",
                                   item.isActive
