@@ -62,7 +62,7 @@ const Pricing = () => {
     }),
   };
   return (
-    <section id="pricing" className="py-10 xl:py-0">
+    <section id="pricingv1" className="py-10 xl:py-0">
       <div className="mx-auto max-w-360 px-4 py-8 sm:py-16 lg:px-8 lg:py-20 xl:px-16">
         <div className="flex w-full flex-col items-center justify-center gap-8 md:gap-12">
           {/*Heading*/}
@@ -72,7 +72,7 @@ const Pricing = () => {
               variant="outline"
               className="h-7 w-fit px-3 py-1 text-sm leading-5 font-normal"
             >
-              Pricing
+              Pricing V1
             </Badge>
             <div className="mx-auto max-w-3xs text-center sm:max-w-md">
               <h2 className="text-foreground text-3xl font-medium sm:text-5xl">
