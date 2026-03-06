@@ -29,11 +29,11 @@ export default function AgencyHeroSection() {
     },
     {
       title: "About us",
-      href: "#",
+      href: "#aboutus",
     },
     {
       title: "Services",
-      href: "#",
+      href: "#services",
     },
     {
       title: "Team",
