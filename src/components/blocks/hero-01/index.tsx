@@ -48,8 +48,8 @@ export default function AgencyHeroSection() {
       href: "#pricingv2",
     },
     {
-      title: "Awards",
-      href: "#",
+      title: "Testimonials",
+      href: "#testimonial",
     },
   ];
 
