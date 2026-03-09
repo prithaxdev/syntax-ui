@@ -1,13 +1,15 @@
+import {
+  Footer,
+  Header,
+  Pricing01,
+  Pricing02,
+  Services,
+  Team,
+} from "@/components/blocks";
 import AboutAndStats01 from "@/components/blocks/about-us-01";
 import AgencyHeroSection from "@/components/blocks/hero-01";
-import PricingV1 from "@/components/blocks/pricing-01/pricing";
-import PricingV2 from "@/components/blocks/pricing-02/pricing";
-import Team from "@/components/blocks/team-01/team";
 import TestimonialPage from "@/components/blocks/testimonial-01/testimonial";
-import Header from "./components/blocks/hero-01/header";
-import { navigationData } from "./data/navigation-data";
-import Footer from "@/components/blocks/footer-01/footer";
-import Services from "@/components/blocks/services-01/services";
+import { navigationData } from "@/data/navigation-data";
 
 export function App() {
   return (
@@ -18,8 +20,8 @@ export function App() {
       <Team />
       <TestimonialPage />
       <Services />
-      <PricingV1 />
-      <PricingV2 />
+      <Pricing01 />
+      <Pricing02 />
       <Footer />
     </>
   );

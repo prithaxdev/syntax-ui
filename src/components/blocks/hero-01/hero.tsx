@@ -12,6 +12,7 @@ export type AvatarList = {
 type HeroSectionProps = {
   avatarList: AvatarList[];
 };
+
 const GetStartedButton = ({ className }: { className?: string }) => (
   <Button
     className={cn(
