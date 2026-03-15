@@ -64,20 +64,20 @@ const UserDropdown = ({ trigger, defaultOpen, align = "end" }: Props) => {
               <div className="relative">
                 <Avatar className="data-[size=lg]:size-8">
                   <AvatarImage
-                    src="https://images.shadcnspace.com/assets/profiles/user-11.jpg"
-                    alt="David McMichael"
+                    src="https://github.com/shadcn.png"
+                    alt="Pritha Karki"
                   />
-                  <AvatarFallback>DM</AvatarFallback>
+                  <AvatarFallback>PK</AvatarFallback>
                 </Avatar>
                 <span className="ring-card absolute right-0 bottom-0 size-2 rounded-full bg-green-600 ring-2" />
               </div>
 
               <div className="flex flex-col">
                 <span className="text-popover-foreground text-sm font-medium">
-                  David McMichael
+                  Pritha Karki
                 </span>
                 <span className="text-muted-foreground text-sm">
-                  david@shadcnspace.com
+                  pritha@syntax.com
                 </span>
               </div>
             </DropdownMenuLabel>
