@@ -8,5 +8,6 @@ export const navigationData: NavigationSection[] = [
   { title: "Team", href: "#team" },
   { title: "Pricing v1", href: "#pricingv1" },
   { title: "Pricing v2", href: "#pricingv2" },
-  { title: "Testimonials", href: "#testimonial" },
+  { title: "Testimonials v1", href: "#testimonial01" },
+  { title: "Testimonials v2", href: "#testimonial02" },
 ];

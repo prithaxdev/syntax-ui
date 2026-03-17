@@ -47,7 +47,7 @@ export default function TestimonialPage({
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
   return (
-    <section ref={sectionRef} id="testimonial" className="py-10 xl:py-0">
+    <section ref={sectionRef} id="testimonial01" className="py-10 xl:py-0">
       <div className="mx-auto max-w-7xl px-4 pt-12 sm:px-16">
         <div>
           <motion.div
@@ -57,7 +57,7 @@ export default function TestimonialPage({
             className="flex flex-col gap-3"
           >
             <Badge variant="outline" className="h-auto w-fit px-3 py-1 text-sm">
-              Testimonials
+              Testimonials V1
             </Badge>
             <h2 className="tracking text-xl leading-none font-medium sm:text-5xl">
               Success Stories

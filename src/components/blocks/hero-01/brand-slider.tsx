@@ -29,7 +29,7 @@ function BrandSlider({ brandList }: { brandList: BrandList[] }) {
               </div>
             </div>
             {brandList && brandList.length > 0 && (
-              <div className="py-4">
+              <div className="relative overflow-hidden py-4">
                 <Marquee pauseOnHover className="p-0 [--duration:20s]">
                   {brandList.map((brand, index) => (
                     <div key={index}>
@@ -46,6 +46,8 @@ function BrandSlider({ brandList }: { brandList: BrandList[] }) {
                     </div>
                   ))}
                 </Marquee>
+                <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
+                <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
               </div>
             )}
           </motion.div>

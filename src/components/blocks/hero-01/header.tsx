@@ -102,7 +102,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
     >
       <div
         className={cn(
-          "flex h-fit w-full max-w-6xl items-center justify-between gap-3.5 transition-all duration-500 lg:gap-6",
+          "flex h-fit w-full max-w-7xl items-center justify-between gap-3.5 transition-all duration-500 lg:gap-6",
           sticky
             ? "bg-background/60 border-border/40 shadow-primary/5 rounded-full border p-2.5 shadow-2xl backdrop-blur-lg"
             : "border-transparent bg-transparent",
